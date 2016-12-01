@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #005ce6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* Standard syntax */ 
+
+    text-align: justify;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    color: #fff;
+    height: 45.6em;
+}
+
+.bodyAdm {
+    background: #005ce6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #003333, #00cccc, #66ffff, #005ce6, #66ffff, #00ff80, #ffff80); /* Standard syntax */ 
+
+    text-align: justify;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    height: 45.6em;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#cuerpo {
+    background: url("../img/fondo3.jpeg") no-repeat;
+    background-size: cover;
+    width: 72.2em;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.6;
+}
+#container {
+    margin: 0 auto;
+    height: inherit;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+
+#header {
+    width: 90%;
+    margin: auto;
+    padding: .5em 0;
+    background: rgba(0, 17, 51, 0.6);
+    text-align: center;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+#header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+#header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+#content {
+    width: 90%;
+    margin: 0px auto;
+    clear: left;
+    text-align: center;
+    font-size: 1em;
+    color: #000;
+
+}
+
+#content h2, h3{
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color:#fff;
+    font-size: 2em;
+    margin: 0 0 .5em;
+    padding-top: 10px;
+}
+
+li {
+    padding: 18px;
+}
+
+a {
+    color: #429;
+    text-decoration: none;
+}
+table{
+    width: 80%; 
+    margin: 20px auto;
+    border: 1px solid white;
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+}
+th{
+    color: #fff;
+    padding: 20px;
+    font-size: 1.5em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: 1px solid white;
+}
+
+td{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+#excursion {
+    width: 100%;
+    float: left;
+    padding-top: 5px;
+}
+
+#carro {
+    width: 35%;
+    float: right;
+    padding-top: 15px;
+}
+
+hr{
+    color: #fff;
+    background-color: #fff;
+    height: 2px;
+}
+#excursion img {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-collapse:collapse;
+    width: 300px;
+    height: 190px;
+    border-radius: 5%;
+}
+
+#carro img {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-collapse:collapse;
+    width: 130px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+#detalle img {
+    margin-top: 20px;
+    border: 1px solid white;
+    border-collapse:collapse;
+    width: 260px;
+    border-radius: 5%;
+}
+
+#excursion, #carro {
+    border: 1px solid white;
+}
+
+#footer {
+    clear: both;
+    color: white;
+    background-color: #000d33;
+    text-align: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 1em 0;
+    margin: auto;
+    width: 90%; 
+}
+
+.compra, .detalle, .volver{
+    background-color: #3333ff;
+    color: #fff;
+}
+
+.eliminar{
+    background-color: #ff3333;
+    color: #fff;
+}
+
+.news {
+    width: 90%;
+    margin: 6px auto ;
+}
+
+#ofertas {
+    width: 110px;
+    float: left;
+}
+
+#novedades {
+    width: 110px;
+    float: left;
+}
+.muestra{
+    float: left;
+    margin-top: 5px;
+    margin-left: 63px;
+    margin-bottom: 10px;
+}
+#adm{
+    margin-left: 531px;
+    float: left;
+    background-color: green;
+}
+
+input {
+    padding: 5px;
+    border-radius: 10%;
+}
+.botonera{
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+}
