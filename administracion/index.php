@@ -45,8 +45,8 @@ session_start();
 
 
                 if ($accion == "Nueva excursion") {
-                    move_uploaded_file($_FILES["imagen"]["name"] . "../img/" . $_FILES["imagen"]["name"]);
-                    $inserta = "INSERT INTO excursiones (codigo, categoria, nombre, precio, imagen, oferta, novedad, detalle) VALUES ('$_POST[codigo]', '$_POST[categoria]', '$_POST[nombre]', '$_POST[precio]' , '$_FILES[imagen][name]' , '$_POST[oferta]' , '$_POST[novedad]' , '$_POST[detalle]')";
+                    move_uploaded_file($_POST['imagenTmp'] , "../img/" . $_POST['imagen']);
+                    $inserta = "INSERT INTO excursiones (codigo, categoria, nombre, precio, imagen, oferta, novedad, detalle) VALUES ('$_POST[codigo]', '$_POST[categoria]', '$_POST[nombre]', '$_POST[precio]' , '$_POST[imagen]' , '$_POST[oferta]' , '$_POST[novedad]' , '$_POST[detalle]')";
                     $conexion->exec($inserta);
                 }
 

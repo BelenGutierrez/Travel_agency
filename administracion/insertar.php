@@ -36,7 +36,8 @@ session_start();
                 $categoria = $_POST['categoria'];
                 $nombre = $_POST['nombre'];
                 $precio = $_POST['precio'];
-                $imagen = $_POST['imagen'];
+                $imagen = $_FILES['imagen']['name'];
+                $imagenTmp = $_FILES['imagen']['tmp_name'];
                 $oferta = $_POST['oferta'];
                 $novedad = $_POST['novedad'];
                 $detalle = $_POST['detalle'];
@@ -71,6 +72,7 @@ session_start();
                                 </tr>
                                 <tr>
                                     <td>IMAGEN: <input type = "text" name = "imagen" value = "<?= $imagen ?>" size = "10" readonly = "readonly"></td>
+                                    <input type = "hidden" name = "imagenTmp" value = "<?= $imagenTmp ?>" >
                                     <td>OFERTA: <input type = "text" name = "oferta" value = "<?= $oferta ?>" size = "4" readonly = "readonly"></td>
                                     <td>NOVEDAD: <input type = "text" name = "novedad" value = "<?= $novedad ?>" size = "4" readonly = "readonly"></td>
                                     <td>DETALLE: <input type = "text" name = "detalle" value = "<?= $detalle ?>" size = "15" readonly = "readonly"></td>
